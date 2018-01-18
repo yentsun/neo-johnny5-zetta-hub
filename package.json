@@ -1,0 +1,34 @@
+{
+  "name": "neo-johnny5-zetta-hub",
+  "version": "0.1.0",
+  "description": "A demonstration of NanoPi Neo as ZettaJS hub with Johnny5 device",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yentsun/neo-johnny5-zetta-hub.git"
+  },
+  "keywords": [
+    "zettajs",
+    "johnny5"
+  ],
+  "author": "Max Korinets",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yentsun/neo-johnny5-zetta-hub/issues"
+  },
+  "homepage": "https://github.com/yentsun/neo-johnny5-zetta-hub#readme",
+  "dependencies": {
+    "etherport-client": "^0.1.3",
+    "flightplan": "^0.6.17",
+    "johnny-five": "^0.13.0",
+    "zetta": "^1.5.1",
+    "zetta-led-mock-driver": "^0.10.0"
+  },
+  "engines": {
+    "node": "<=4.*"
+  }
+}

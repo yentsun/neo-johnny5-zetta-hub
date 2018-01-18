@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "neo-johnny5-zetta-hub",
+      "script": "npm",
+      "args": "start",
+      "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "neo"
+      },
+      "env_development": {
+        "NODE_ENV": "neo",
+        "LOG_LEVEL": "debug"
+      }
+    }
+  ]
+}
