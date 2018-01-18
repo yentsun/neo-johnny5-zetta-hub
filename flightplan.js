@@ -22,10 +22,10 @@ plan.local(function(local) {
 plan.remote(function(remote) {
 
     remote["with"]("cd " + plan.runtime.options.dir, function () {
-        remote.log('installing dependencies...');
-        remote.exec('npm i');
-        remote.log('pruning dependencies...');
-        remote.exec('npm prune');
+        // remote.log('installing dependencies...');
+        // remote.exec('npm i');
+        // remote.log('pruning dependencies...');
+        // remote.exec('npm prune');
         remote.log('reloading process...');
         remote.exec('pm2 reload pm2.json --env development');
     });

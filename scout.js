@@ -23,6 +23,13 @@ SensorScout.prototype.init = function(next) {
     var self = this;
     self.board.on('ready', function () {
         self.discover(sensor);
+        var RC004 = new five.Sensor({
+            pin: "A0"
+        });
+        RC004.on("change", function() {
+            var noise = this.scaleTo(0, 500);
+            if (noise < 424) console.log('SNAP!!!');
+        });
     });
 
     next();
