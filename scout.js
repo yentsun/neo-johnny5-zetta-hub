@@ -1,8 +1,9 @@
 var Scout = require('zetta').Scout;
 var util = require('util');
-const five = require('johnny-five');
-const EtherPortClient = require('etherport-client').EtherPortClient;
+var five = require('johnny-five');
+var EtherPortClient = require('etherport-client').EtherPortClient;
 var sensor = require('./sensor');
+
 
 SensorScout = module.exports = function () {
     Scout.call(this);
@@ -15,7 +16,7 @@ SensorScout.prototype.init = function (next) {
     console.log('waiting for NodeMCU');
     var board = new five.Board({
         port: new EtherPortClient({
-            host: '192.168.0.107', // IP address of the ESP
+            host: '192.168.0.107', // IP address of the NodeMCU
             port: 3030
         }),
         timeout: 1e5,

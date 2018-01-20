@@ -9,7 +9,6 @@ var SnapDriver = module.exports = function () {
 util.inherits(SnapDriver, Device);
 
 SnapDriver.prototype.init = function (config) {
-
     config
     .type('sound_sensor')
     .monitor('snapped');
